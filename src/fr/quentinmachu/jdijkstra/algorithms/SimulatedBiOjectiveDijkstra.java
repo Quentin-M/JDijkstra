@@ -105,7 +105,7 @@ public class SimulatedBiOjectiveDijkstra implements Dijkstra {
 				
 				ArrayList<Path> c = new ArrayList<Path>();
 				c.add(backtrack(start, end));
-				return new Result(start, end, (endTime-startTime), c, coef);
+				return new Result(g, start, end, (endTime-startTime), c, coef);
 			}
 			
 			// For each successor

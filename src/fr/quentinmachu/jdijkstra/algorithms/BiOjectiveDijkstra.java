@@ -103,7 +103,7 @@ public class BiOjectiveDijkstra  implements Dijkstra {
 		/*System.out.println("Temps d'éxécution: "  + (float)(end-start) + " ms");
 		System.out.println("-----------------------------------------\n");*/
 		
-		return new Result(start, end, (endTime-startTime), backtrack(end));
+		return new Result(g, start, end, (endTime-startTime), backtrack(end));
 	}
 
 	/**
